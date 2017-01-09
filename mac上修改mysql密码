@@ -1,0 +1,12 @@
+1. 在mysql官网下载mac安装包，然后一步一步安装既可，如果手快就没有几下mysql的默认登录密码 哈哈
+2. 修改mysql默认密码
+  A: 首先，偏好设置中停止mysql服务
+  B: 打开终端 cd /usr/local/mysql/bin/
+  C: 然后 mysqld 回车 这样你就进入了安全模式，也就是非常危险的模式，不需要密码就可以登录mysql
+  D: 打开一个新的终端连接数据库
+    mysql -u root -p 回车  回车 进入数据库
+  E: 修改密码
+    use mysql; //选中权限数据库
+    describe user; //查看user表的字段
+    UPDATE mysql.user SET authentication_string=PASSWORD(123456) where User='root'; //将root用户密码改成 123456
+3. 重启mysql服务
