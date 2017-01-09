@@ -1,4 +1,4 @@
-1. 在mysql官网下载mac安装包，然后一步一步安装既可，如果手快就没有几下mysql的默认登录密码 哈哈
+1. 在mysql官网下载mac安装包，然后一步一步安装既可，如果手快就没有记下mysql的默认登录密码 哈哈
 2. 修改mysql默认密码
   A: 首先，偏好设置中停止mysql服务
   B: 打开终端 cd /usr/local/mysql/bin/
